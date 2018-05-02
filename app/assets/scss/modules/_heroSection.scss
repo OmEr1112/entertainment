@@ -1,0 +1,132 @@
+.heroSection {
+  height: 31.7rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1.8rem;
+
+  .headlinesSection {
+    float: left;
+
+    h3 {
+      font-size: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+
+      span {
+        color: #7f0e13;
+      }
+    }
+
+    li {
+      list-style-type: circle;
+      list-style-position: inside;
+      background: linear-gradient(to bottom, #dadcc1, #eff1e3);
+      padding: .8rem;
+      border-radius: 1rem;
+      width: 31.1rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.container {
+  background: linear-gradient(to bottom, white 5%, #ecf0de);
+}
+
+.imageSection {
+  float: left;
+  width: 58.3rem;
+  height: 26.6rem;
+  margin: 1.55rem;
+  overflow: hidden;
+  position: relative;
+
+
+  .images {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 500ms ease;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .imageBanner {
+    color: white;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1.5rem;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    background-color: rgba(#7f0e13, .5);
+    width: 100%;
+    height: 9.8rem;
+
+    h4 {
+      letter-spacing: .05rem;
+      padding-bottom: 1rem; 
+    }
+
+    p {
+      letter-spacing: .05rem;
+    }
+
+    p:first-of-type {
+      padding-bottom: .4rem;
+    }
+
+    button {
+      position: absolute;
+      bottom: 1rem;
+      right: 1.5rem;
+      padding: .5rem 1rem;
+      border-radius: 1rem;
+      cursor: pointer;
+      border: transparent;
+      background: linear-gradient(to bottom, #980000, #660000);
+      color: white;
+      @extend .button-3d;
+      
+      &:hover {
+        color: #c09494;
+      }
+    }
+  }
+}
+
+
+.imgbanbtn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  z-index: 2500;
+}
+
+.imgbanbtn:hover {
+  opacity: .9;
+}
+
+.imgbanbtn-prev {
+  border-width: 20px 30px 20px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 5px;
+}
+
+.imgbanbtn-next {
+  border-width: 20px 0 20px 30px;
+  border-color: transparent transparent transparent #fff;
+  right: 5px;
+  margin-right: 5px;
+}

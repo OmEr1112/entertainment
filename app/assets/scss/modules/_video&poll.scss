@@ -1,0 +1,131 @@
+.videoPoll {
+  position: relative;
+  margin-bottom: 1.8rem;
+}
+
+.pollSection {
+  height: 26.4rem;
+  width: 32.1rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #6f0101;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+
+  h2 {
+    height: 3.4rem;
+    margin: 1rem auto 0 auto;
+    padding: .5rem 0 0 2rem;
+    font-weight: 500;
+    width: 29rem;
+    font-size: 2rem;
+    border-radius: .6rem;
+    background: linear-gradient(to bottom, #980000, #660000);
+    @extend .button-3d;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  input[type="radio"] {
+    margin-bottom: 1rem;
+    background-color: #7e0404;
+    // box-shadow:
+    //   2px 2px 1px rgba(255,0,0,0.1) inset,
+    //   -20px -20px 1px rgba(255,0,0,0.1) inset;
+  }
+
+  input[type="radio"]:last-of-type {
+    margin-bottom: 1.5rem;
+  }
+
+  form {
+    padding-left: 2.8rem;
+    width: 30.1rem;
+    height: 15.3rem;
+  }
+
+  button {
+    display: inline-block;
+    padding: .7rem 1.8rem;
+    border: 0px transparent;
+    border-radius: 1rem;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #980000, #660000);
+    @extend .button-3d;
+    
+    &:hover {
+      color: #c09494;
+    }
+  }
+
+  button:first-of-type {
+    margin-left: 3rem;
+  }
+
+  button:nth-of-type(2) {
+    margin-left: 1.5rem;
+  }
+
+}
+
+.videoSection {
+  height: 26.4rem;
+  width: 61.2rem;
+  padding: .5rem 1.2rem 1.2rem .5rem;
+  background-color: #babd9a;
+  border-radius: 1rem;
+}
+
+.videoPlayer {
+  width: 29rem;
+  height: 100%;
+  background: linear-gradient(to bottom, #d4d6bf 10%, #babd9a);
+  float: left;
+  border-radius: .5rem;
+  padding: 1.1rem .8rem 0 .8rem;
+}
+
+
+
+div.videosList {
+  cursor: pointer;
+  float: right;
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  li {
+    padding: .4rem;
+    position: relative;
+    height: 5.7rem;
+    width: 30rem;
+    background-color: #d4d6bf;
+    margin-bottom: .6rem;
+    border-radius: .5rem;
+  }
+
+  li:last-child{
+    margin-bottom: 0;
+  }
+
+  div.videoText {
+    font-family: sans-serif;
+    position: absolute;
+    left: 9rem;
+    top: 1.5rem;
+  }
+
+}
+
+
